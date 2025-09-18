@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/core/app_colors.dart';
 import 'package:flutter_application_1/views/auth/ui/login_view.dart';
 
 void main() {
@@ -15,6 +16,8 @@ class ourMarket extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'our market',
       theme: ThemeData(
+        
+        scaffoldBackgroundColor:AppColors.kScaffoldColor,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
