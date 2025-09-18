@@ -4,10 +4,10 @@ In this project, several SOLID principles were applied to maintain clarity and r
 (2) D — Dependency Inversion Principle (DIP): both OrderController and ReportService depend on the OrderRepository interface instead of a concrete implementation, which makes it possible to switch from InMemoryOrderRepository to SqliteOrderRepository or FirebaseOrderRepository without changing the core logic. 
 (3) O — Open/Closed Principle (OCP): the system is open for extension but closed for modification, meaning that new drinks or new storage providers can be added as new classes without modifying existing code.
 Object-Oriented Programming (OOP) concepts are tightly connected to the design of this project. Encapsulation is applied by wrapping all order state and fields inside the Order class and exposing only controlled interfaces for modification. Abstraction and Polymorphism are used in the beverage model (with the Beverage type and possible subclasses or factory patterns), where the system can work with the generic Beverage type while each specific drink can define its own behavior. This reflects the ideas from The Object-Oriented Thought Process — breaking the system into small, modular, and reusable components that simplify complexity, support maintainability, and allow the application to evolve with minimal changes.
-![1Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.13_02ab83d7.JPG )
-![2Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.13_9ea51d9c.JPG )
-![3Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.13_b074db92.JPG )
-![4Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.13_bcabd667.JPG )
-![5Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.13_e47a6d49.JPG )
-![6Screen](screenshots/WhatsApp Image 2025-09-18 at 21.31.14_d1db6f97.JPG )
+![1Screen](screenshots/screen1.JPG )
+![2Screen](screenshots/screen2.JPG )
+![3Screen](screenshots/screen3.JPG )
+![4Screen](screenshots/screen4.JPG )
+![5Screen](screenshots/screen5.JPG )
+![6Screen](screenshots/screen6.JPG )
 
