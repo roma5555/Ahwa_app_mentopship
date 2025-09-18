@@ -1,3 +1,4 @@
+git remote -v
 #
 # Generated file, do not edit.
 #
