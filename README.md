@@ -1,16 +1,6 @@
-# flutter_application_1
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In this project, I implemented a smart coffee shop management application that handles customer orders, tracks completed orders, and generates daily reports. The project was designed with a focus on clean architecture and maintainability, ensuring that the system can be easily extended with new features such as adding new drinks, integrating different storage backends, or applying filters to reports.
+In this project, several SOLID principles were applied to maintain clarity and reduce coupling. 
+(1) S — Single Responsibility Principle (SRP): each class has only one clear responsibility: the Order class represents order data only, OrderController manages the application logic and repository interaction, and ReportService focuses solely on generating reports. This separation makes the code easier to test and maintain. 
+(2) D — Dependency Inversion Principle (DIP): both OrderController and ReportService depend on the OrderRepository interface instead of a concrete implementation, which makes it possible to switch from InMemoryOrderRepository to SqliteOrderRepository or FirebaseOrderRepository without changing the core logic. 
+(3) O — Open/Closed Principle (OCP): the system is open for extension but closed for modification, meaning that new drinks or new storage providers can be added as new classes without modifying existing code.
+Object-Oriented Programming (OOP) concepts are tightly connected to the design of this project. Encapsulation is applied by wrapping all order state and fields inside the Order class and exposing only controlled interfaces for modification. Abstraction and Polymorphism are used in the beverage model (with the Beverage type and possible subclasses or factory patterns), where the system can work with the generic Beverage type while each specific drink can define its own behavior. This reflects the ideas from The Object-Oriented Thought Process — breaking the system into small, modular, and reusable components that simplify complexity, support maintainability, and allow the application to evolve with minimal changes.
